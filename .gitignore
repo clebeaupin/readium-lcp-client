@@ -68,3 +68,6 @@ storage.json
 result.epub
 
 *.iml
+
+platform/cross-platform/vendor
+platform/cross-platform/out
