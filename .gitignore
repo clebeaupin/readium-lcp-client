@@ -71,3 +71,4 @@ result.epub
 
 platform/cross-platform/vendor
 platform/cross-platform/out
+*.pyc
