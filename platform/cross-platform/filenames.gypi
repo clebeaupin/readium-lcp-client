@@ -8,6 +8,7 @@
     'zip_lib_dir': '<(third_party_dir)/ziplib/Source/ZipLib',
     'zlib_dir': '<(zip_lib_dir)/extlibs/zlib',
     'bzip2_dir': '<(zip_lib_dir)/extlibs/bzip2',
+    'time64_dir': '<(third_party_dir)/time64',
     'zlib_sources': [
       '<(zlib_dir)/compress.c',
       '<(zlib_dir)/zutil.c',
@@ -40,6 +41,9 @@
       '<(zip_lib_dir)/ZipArchiveEntry.cpp',
       '<(zip_lib_dir)/ZipFile.cpp'
       #'<(zip_lib_dir)/extlibs/lzma/unix/*.c',
+    ],
+    'time64_sources': [
+      '<(time64_dir)/time64.c'
     ],
     'cryptopp_sources': [
       '<(cryptopp_dir)/3way.cpp',

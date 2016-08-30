@@ -11,7 +11,7 @@
     ],
     'cflags': [
       '-w',
-      '-fPIC', 
+      '-fPIC',
       '-fvisibility=hidden',
       '-g', # Debug mode
     ],
@@ -35,7 +35,8 @@
       'type': 'static_library',
       'dependencies': [
         'cryptopp',
-        'zip_lib'
+        'zip_lib',
+        'time64'
       ],
       'include_dirs': [
         '<(third_party_dir)'
@@ -82,6 +83,13 @@
       'sources': [
         '<@(bzip2_sources)'
       ]
+    },
+    {
+      'target_name': 'time64',
+      'type': 'static_library',
+      'sources': [
+        '<@(time64_sources)'
+      ]
     }
   ],
   'conditions': [
@@ -122,11 +130,11 @@
             ]
           },
           'ldflags': [
-       
+
           ],
           'link_settings': {
             'libraries': [
-            
+
             ]
           }
         }
@@ -148,7 +156,7 @@
           ],
           'link_settings': {
             'libraries': [
-            
+
             ]
           }
         }
