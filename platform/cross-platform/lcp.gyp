@@ -97,6 +97,8 @@
         'target_defaults': {
           'defines': [
             'LIBXML_THREAD_ENABLED',
+            'CRYPTOPP_DISABLE_ASM',
+            'ZLIB_ONLY'
           ],
           'cflags_cc': [
             #'-std=c++0x',

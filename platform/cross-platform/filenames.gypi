@@ -40,7 +40,6 @@
       '<(zip_lib_dir)/ZipArchive.cpp',
       '<(zip_lib_dir)/ZipArchiveEntry.cpp',
       '<(zip_lib_dir)/ZipFile.cpp'
-      #'<(zip_lib_dir)/extlibs/lzma/unix/*.c',
     ],
     'time64_sources': [
       '<(time64_dir)/time64.c'
